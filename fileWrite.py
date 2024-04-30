@@ -1,0 +1,5 @@
+file_contents = open("readme.txt", "a")
+# file_contents.write("\npepper-vegetable")
+file_contents.write("\nonion-vegetable")
+print()
+file_contents.close()

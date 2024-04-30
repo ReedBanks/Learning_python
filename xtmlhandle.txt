@@ -1,0 +1,16 @@
+// PHP code
+$url = 'https://example.com/path/to/resource';
+$encoded_url = urlencode($url);
+
+// React code
+const url = 'https://example.com/path/to/resource';
+const encodedUrl = encodeURIComponent(url);
+
+try {
+  const xhr = new XMLHttpRequest();
+  xhr.open('GET', encodedUrl);
+  xhr.send();
+} catch (error) {
+  console.error(error);
+  // Display a user-friendly error message
+}
